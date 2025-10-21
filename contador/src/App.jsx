@@ -1,16 +1,16 @@
-import { useState } from 'react'
+import Teoria from "./components/teoria";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div style={{ textAlign: 'center', marginTop: '100px', marginLeft: '800px'}}>
-      <h1>Contador React</h1>
-      <h2>{count}</h2>
-      <button onClick={() => setCount(count + 1)}>Sumar +1</button>
-      <button onClick={() => setCount(count - 1)} style={{ marginLeft: '10px' }}>Restar -1</button>
-    </div>
-  )
+    <>
+      <header className="py-3 text-center">
+        <h1 className="display-4 text">Contador</h1>
+      </header>
+      <main>
+        <Teoria />  
+      </main>
+    </>
+  );
 }
 
-export default App
+export default App;
