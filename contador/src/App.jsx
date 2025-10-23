@@ -1,5 +1,6 @@
 import Teoria from "./components/teoria";
 import Conceptos from "./components/Conceptos";
+import Contador from "./components/Contador";
 function App() {
 const codComision = 'web16 2025 modulo2';
   return (
@@ -10,6 +11,7 @@ const codComision = 'web16 2025 modulo2';
       <main>
         <Teoria />  
         <Conceptos nombreComision={codComision}/>
+        <Contador />
       </main>
     </>
   );
