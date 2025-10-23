@@ -1,6 +1,7 @@
 import Teoria from "./components/teoria";
-
+import Conceptos from "./components/Conceptos";
 function App() {
+const codComision = 'web16 2025 modulo2';
   return (
     <>
       <header className="py-3 text-center">
@@ -8,6 +9,7 @@ function App() {
       </header>
       <main>
         <Teoria />  
+        <Conceptos nombreComision={codComision}/>
       </main>
     </>
   );
